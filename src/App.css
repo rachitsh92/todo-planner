@@ -1,38 +1,77 @@
-.App {
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+nav {
+  background-color: rgb(12, 195, 195);
+  margin: 10px;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  background-color: azure;
+  width: 70%;
+  margin: auto;
+  padding: 4vmax 8vmax;
+  box-sizing: border-box;
   min-height: 100vh;
+}
+
+.container>h3 {
+  text-align: center;
+  color: rgb(48, 46, 46);
+  margin-bottom: 5px;
+}
+
+.container>form {
   display: flex;
   flex-direction: column;
+}
+
+input,
+textarea,
+button {
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  font-size: medium;
+}
+
+button {
+  background-color: rgb(120, 222, 222);
+  font-size: medium;
+}
+
+button:hover {
+  background-color: rgb(46, 179, 179);
+}
+
+.task {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px 0;
+  border: 1px solid whitesmoke;
+  background-color: rgb(60, 85, 85);
+  color: azure;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.task>div {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task button {
+  margin: 10px;
+}
+
+.task button:hover {
+  background-color: red;
 }
